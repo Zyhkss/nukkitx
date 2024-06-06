@@ -1,0 +1,5 @@
+name: ItemJoin
+main: us.sleepybear.minecraft.itemjoin.ItemJoinPlugin
+version: 1.4
+author: Sleepybear
+api: ["1.0.9"]

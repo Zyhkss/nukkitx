@@ -1,0 +1,41 @@
+#ItemJoin by Sleepybear - v1.4
+
+#clearOnJoin: <boolean>
+# if set to true, will clear the players inventory on join
+clearOnJoin: false
+
+#firstJoinOnly: <boolean>
+#  if set to ture, will try to give the player the listed items only
+#  on the first time they join. This also means Inventories will not be
+#  cleared for returning players.
+firstJoinOnly: false
+
+#bypass: Array of <string>
+# if playername is included here, their inventories will never be cleared,
+#  even if the above option is enabled
+bypass:
+  - Sleepybear
+
+#items: array of maps
+# example:
+# items:
+#  - itemId: 276
+#    meta: 0
+#    count: 1
+#    slot: 0 # Can be between 0 and 39, 0-8 is the hotbar, 36-39 are the armor slots
+#    ench: # LIST of enchantment ID & Level, both must be specified, see see https://github.com/NukkitX/Nukkit/blob/358a5aa18ee4620c05535d304bf1394125a72bf2/src/main/java/cn/nukkit/item/enchantment/Enchantment.java#L36
+#     - id: 13 #FIRE ASPECT
+#       level: 2
+items:
+  - itemId: 276
+    meta: 0
+    count: 1
+    ench:
+      - id: 13
+        level: 2
+      - id: 26
+        level: 1
+  - itemId: 345
+    meta: 0
+    count: 1
+    slot: 9
